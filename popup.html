@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Configuração da API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="password"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="icon.png" alt="Logo" class="logo">
+    <h1>Configuração da API do Gemini</h1>
+    <label for="apiKey">API Key:</label>
+    <input type="password" id="apiKey" placeholder="Insira sua API Key aqui">
+    <button id="saveButton">Salvar</button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

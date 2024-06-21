@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Leitor de Atlantis Plan",
+  "version": "1.0",
+  "description": "Uma extensão para ler conteúdo de pull requests no GitHub com o comando 'atlantis plan'.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
